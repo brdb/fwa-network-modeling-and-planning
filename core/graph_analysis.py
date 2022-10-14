@@ -67,7 +67,7 @@ def graph_analysis(g, print_stats=True, weighted_stats=True, return_stats=False)
 
     # Verify that the input parameter is a graph
     if not isinstance(g, ig.Graph):
-        print(f"Parameter `dataset` must be either a Graph object")
+        print(f"Parameter `g` must be a Graph object")
         assert False 
 
     # Split total graph into connected parts
