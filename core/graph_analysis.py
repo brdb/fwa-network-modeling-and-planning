@@ -8,7 +8,7 @@ import igraph as ig
 import numpy as np
 import csv
 
-sys.path.insert(1, '../utils/')
+sys.path.append('../utils/')
 
 from fileinput import filename
 from graph_creation import graph_creation

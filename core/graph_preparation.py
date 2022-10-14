@@ -1,9 +1,12 @@
 #!/usr/bin/python
 
+import sys
 import logging
 
 import igraph as ig
 import numpy as np
+
+sys.path.append('../utils/')
 
 from util_graph import parse_unconnected_graph
 from util_linkbudget import get_pathloss, get_throughput, get_capacity

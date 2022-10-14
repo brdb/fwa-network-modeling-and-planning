@@ -1,13 +1,11 @@
 #!/usr/bin/python
 
-import logging
 import os
+import logging
 
 import igraph as ig
 import numpy as np
 import csv
-
-import logging
 
 # Logging definitions
 log_level = logging.DEBUG

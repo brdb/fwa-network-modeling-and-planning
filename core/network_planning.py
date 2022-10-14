@@ -1,14 +1,13 @@
 import sys
 import os
-
-import itertools
-import collections
+import logging
 
 import igraph as ig
 import numpy as np
 import matplotlib.pyplot as plt
 
-import logging
+import itertools
+import collections
 
 # Logging definitions
 log_level = logging.DEBUG
