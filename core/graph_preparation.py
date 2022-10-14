@@ -46,6 +46,11 @@ def graph_preparation(g, t, f=60e9, sa=0, pr=0, vd=0, print_stats=True, datapath
         Graph with throughput attribute attached to the edges
     """
 
+    # Verify that the input parameter is a graph
+    if not isinstance(g, ig.Graph):
+        print(f"Parameter `g` must be a Graph object")
+        assert False 
+
     # Verify whether graph is connected
     if not g.is_connected():
         logging.error(f"Input graph is not connected")
